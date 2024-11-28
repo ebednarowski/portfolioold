@@ -1,17 +1,73 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Rodriguez - Film Portfolio</title>
+    <title>Portfolio - Media Studies</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <div id="root"></div>
+    <header>
+        <h1>Emily Bednarowski</h1>
+        <p>Media Studies Portfolio</p>
+    </header>
 
-    <script type="text/babel" src="Portfolio.js"></script>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Emily, a media studies major passionate about storytelling, digital design, and the power of media to inspire change. Welcome to my portfolio!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Documentary: The Green Lens</h3>
+            <p>A short documentary exploring environmental journalism and its impact on youth activism.</p>
+        </div>
+        <div class="project-card">
+            <h3>Blog: Media Musings</h3>
+            <p>A blog discussing trends in media representation and the future of digital storytelling.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Video Editing (Premiere Pro, Final Cut)</li>
+            <li>Social Media Strategy</li>
+            <li>Graphic Design (Photoshop, Canva)</li>
+            <li>Web Design (HTML, CSS, JavaScript)</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Emily Bednarowski. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
