@@ -1,0 +1,23 @@
+/* Custom color palette for sage green theme */
+.bg-sage-50 { background-color: #f5f5f4; }
+.bg-sage-100 { background-color: #e6e6e0; }
+.bg-sage-200 { background-color: #d7d7d0; }
+.bg-sage-300 { background-color: #c8c8c0; }
+
+.text-sage-600 { color: #7c7c70; }
+.text-sage-700 { color: #6c6c60; }
+.text-sage-800 { color: #5c5c50; }
+.text-sage-900 { color: #4c4c40; }
+
+/* Additional custom styles if needed */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
