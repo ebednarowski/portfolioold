@@ -229,3 +229,52 @@ main {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+/* Section Styling */
+#graphic-collections {
+    padding: 2rem;
+    text-align: center;
+}
+
+#graphic-collections h2 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Graphic Grid */
+.graphic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+/* Graphic Card */
+.graphic-card {
+    width: 300px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.graphic-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.graphic-card h3 {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.graphic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
