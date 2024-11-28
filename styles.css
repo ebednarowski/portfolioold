@@ -1,32 +1,36 @@
 :root {
-    --main-color: #4CAF50;
-    --secondary-color: #ffffff;
-    --text-color: #333;
-    --background-color: #f8f9fa;
+    --main-color: #4CAF50; /* Green */
+    --secondary-color: #E8F5E9; /* Light Green Background */
+    --accent-color: #388E3C; /* Darker Green for Hover Effects */
+    --text-color: #ffffff; /* White Text */
+    --background-color: #F1F8E9; /* Soft Greenish Background */
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    text-align: center; /* Centers all text */
 }
 
 header {
-    text-align: center;
     background-color: var(--main-color);
-    color: var(--secondary-color);
-    padding: 1.5rem 0;
+    color: var(--text-color);
+    padding: 2rem 0;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 header p {
     font-size: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 nav ul {
@@ -35,7 +39,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
 }
 
 nav ul li {
@@ -44,68 +48,94 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--secondary-color);
-    padding: 0.5rem 1rem;
-    display: inline-block;
+    color: var(--text-color);
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
     transition: background-color 0.3s;
+    border-radius: 8px;
 }
 
 nav ul li a:hover {
-    background-color: #388E3C;
+    background-color: var(--main-color);
 }
 
 section {
     padding: 2rem;
-    margin: 2rem 1rem;
+    margin: 2rem 10%;
     background-color: var(--secondary-color);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Ensures section text is centered */
 }
 
 h2 {
     color: var(--main-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .project-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-label {
-    margin: 0.5rem 0 0.2rem;
+form label {
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: var(--main-color);
 }
 
-input, textarea, button {
-    padding: 0.5rem;
+form input, form textarea, form button {
+    width: 80%;
+    max-width: 400px;
+    padding: 0.8rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
     font-size: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
-button {
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+form button {
     background-color: var(--main-color);
-    color: var(--secondary-color);
+    color: var(--text-color);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #388E3C;
+form button:hover {
+    background-color: var(--accent-color);
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
-    background-color: var(--main-color);
-    color: var(--secondary-color);
+    padding: 1rem 0;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
 }
