@@ -218,7 +218,7 @@ main {
 
 .photo-grid img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -341,7 +341,7 @@ main {
 img {
     border-radius: 50%;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
