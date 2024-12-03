@@ -9,9 +9,10 @@
 body {
     font-family: "Georgia", sans-serif;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background: linear-gradient(135deg, #4CAF50, #A8E6CF); /* Gradient background */
     margin: 0;
     padding: 0;
+    min-height: 100vh; /* Ensures the gradient fills the screen */
     text-align: center; /* Centers all text */
 }
 
