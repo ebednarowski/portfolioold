@@ -140,13 +140,11 @@ footer {
     font-size: 0.9rem;
 }
 
-/* General Layout */
 main {
     padding: 2rem;
     text-align: center;
 }
 
-/* Project Section */
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +153,6 @@ main {
     padding: 2rem 0;
 }
 
-/* Project Card */
 .project-card {
     background-color: var(--secondary-color);
     border: 2px solid var(--main-color);
@@ -173,12 +170,11 @@ main {
 }
 
 .project-card p {
-    color: #333333; /* Dark Gray for better readability */
+    color: #333333;
     font-size: 1rem;
     margin-bottom: 1rem;
 }
 
-/* Button */
 .btn {
     display: inline-block;
     background-color: var(--main-color);
@@ -193,7 +189,7 @@ main {
 .btn:hover {
     background-color: var(--accent-color);
 }
-/* General Layout */
+
 #collections {
     padding: 2rem;
     text-align: center;
@@ -230,7 +226,6 @@ main {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Section Styling */
 #graphic-collections {
     padding: 2rem;
     text-align: center;
@@ -242,7 +237,6 @@ main {
     margin-bottom: 1.5rem;
 }
 
-/* Graphic Grid */
 .graphic-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -250,7 +244,6 @@ main {
     justify-items: center;
 }
 
-/* Graphic Card */
 .graphic-card {
     width: 300px;
     text-align: center;
@@ -277,7 +270,7 @@ main {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-/* Resume Section */
+
 #resume {
     padding: 2rem;
     text-align: left;
@@ -315,7 +308,6 @@ main {
     color: #333;
 }
 
-/* Download Button */
 .btn {
     display: inline-block;
     background-color: var(--main-color);
