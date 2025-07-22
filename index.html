@@ -1,72 +1,72 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!--Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Emma Bednarowski</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/ebedlogo.png" type="image/x-icon">
 </head>
+ <!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <body>
-    <header>
-        <h1>Emma Bednarowski</h1>
-        <p>Compuational Media Student Portfolio</p>
+    <header class="bg-success text-white text-center py-4">
+        <h1 class="text-uppercase fw-bold">Emma Bednarowski</h1>
+        <p class="lead">Computational Media Student Portfolio</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-            <li><a href="photography.html">Photography</a></li>
-            <li><a href="graphic-design.html">Graphic Design</a></li>
-            <li><a href="resume.html">Resume</a>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Emma</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">My Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="photography.html">Photography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="graphic-design.html">Graphic Design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="images/Emma_about.jpg" alt="Avatar">
-        <p>Hi! My name is Emma Bednarowski and I am a 2nd year compuational media student at the Georgia Institute of Technology. Welcome to my portfolio!</p>
-        <p>School email: ebednarowski3@gatech.edu Personal email: emma.bednarowski@gmail.com</p>
+    <section id="about" class="container my-5 text-center">
+        <h2 class="text-success mb-4">About Me</h2>
+        <img src="images/Emma_about.jpg" class="img-fluid rounded shadow" style="max-width: 400px;" alt="Avatar">
+        <p class="mt-4">Hi! I'm Emma, a 2nd-year Computational Media student at Georgia Tech. Welcome to my portfolio!</p>
+        <p>School email: ebednarowski3@gatech.edu<br>Personal email: emma.bednarowski@gmail.com</p>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Video Editing (Premiere Pro, After Effects, Final Cut)</li>
-            <li>Social Media Strategy</li>
-            <li>Graphic Design (Photoshop, Canva, Illustrator)</li>
-            <li>Web Design (HTML, CSS, JavaScript)</li>
-            <li>Writing and Communications (Screenwriting, Articles, News publishing)</li>
+    <section id="skills" class="container my-5">
+        <h2 class="text-success text-center mb-4">Skills</h2>
+        <ul class="list-group list-group-flush mx-auto" style="max-width: 500px;">
+            <li class="list-group-item">Video Editing (Premiere Pro, After Effects, Final Cut)</li>
+            <li class="list-group-item">Social Media Strategy</li>
+            <li class="list-group-item">Graphic Design (Photoshop, Canva, Illustrator)</li>
+            <li class="list-group-item">Web Design (HTML, CSS, JavaScript)</li>
+            <li class="list-group-item">Writing and Communications</li>
         </ul>
-        
     </section>
-        <section id="projects">
-            <ul>
-                <h2>Socials and Contact</h2>
-                <div class="project-card">
-                    <a href="https://www.linkedin.com/in/emma-bednarowski/" class="btn">Linkedin</a>
-                </div>
-                <div class="project-card">
-                    <a href="https://www.instagram.com/emma_bed101/" class="btn">Instagram</a>
-                </div>
-            </ul>
-        </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
+
+    <section class="container my-5 text-center">
+        <h2 class="text-success mb-4">Socials and Contact</h2>
+        <div class="row justify-content-center g-4">
+            <div class="col-md-3">
+                <a href="https://www.linkedin.com/in/emma-bednarowski/" class="btn btn-success w-100">LinkedIn</a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.instagram.com/emma_bed101/" class="btn btn-success w-100">Instagram</a>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -74,5 +74,6 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
