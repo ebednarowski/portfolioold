@@ -340,3 +340,31 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Fix overly large profile image */
+#about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Adjust layout if something is overriding flex behavior */
+#about .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure the text side isn’t squished */
+#about .col-md-7 {
+  text-align: left;
+}
+
+/* Make sure long button text wraps */
+.btn.text-wrap {
+  white-space: normal !important;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+}
+
+
